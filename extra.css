@@ -1,0 +1,111 @@
+:root {
+    --bg: #fafafa;
+    --bd-color: rgb(211,211,211,1);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: calc(100vw - var(--scrollbar-width));
+    background: var(--bg);
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Login CSS */
+
+section.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-top: 80px;
+}
+
+.login-container .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 1px solid;
+    border-color: var(--bd-color);
+    border-radius: 4px;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.login img {
+    width: 160px;
+    margin-bottom: 30px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    width:74%;
+    font-family: 'Poppins';
+}
+
+.login form input {
+    padding: 10px 4px;
+    margin: 4px 0;
+    border: 1px solid;
+    border-color: var(--bd-color);
+    background: var(--bg);
+    border-radius: 4px;
+    
+
+}
+.login form input:focus {
+    outline: none;
+}
+
+.login form input[type=submit] {
+    margin-top: 14px;
+    background: lightblue;
+    cursor: pointer;
+    margin-bottom: 34px;
+    
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login span {
+    font-size: 12px;
+    margin: 0 14%;
+    text-align: center;
+}
+
+.login span a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login span a:hover{
+    text-decoration: underline;
+}
+
+.login-container .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 1px solid;
+    border-color: var(--bd-color);
+    border-radius: 4px;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+.login-container .signup a {
+    text-decoration: none;
+    font-weight: bold;
+}
